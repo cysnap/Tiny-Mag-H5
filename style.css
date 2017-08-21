@@ -14,7 +14,7 @@ h1,h2,h3,h4{font-weight:normal;}
 a{color:#036;text-decoration:none;}
 a:visited{color:#036;text-decoration:none;}
 a:hover{color:#79A5D6;text-decoration:none;}
-.logo{height:60px;top:35px;position:relative;}
+.logo{height:60px;text-align:center;}
 .comment-submit,.content h2,.search-input,.form-textarea,input{font:12px "Segoe UI",Tahoma,Arial;}
 .content h2{margin:0;font-size:16px;font-weight:bold;line-height:130%;padding:4px;color:#0A328C;text-shadow: #B3D9E8 0px 0px 3px;}
 .content h2 a,.content h2 a:visited{color:#0A328C;text-decoration:none;letter-spacing: 1px;}
