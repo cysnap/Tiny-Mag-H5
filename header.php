@@ -25,10 +25,8 @@
 <body>
 
 <header>
-	<div class="nova-l-h">
-			<div class="nova-l">
-				<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.gif" class="logo" alt="<?php bloginfo('name'); ?>" /></a>
-			</div>
+	<div class="logo">
+		<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.gif" class="logo" alt="<?php bloginfo('name'); ?>" /></a>
 	</div>
 	<div class="nav">
 		<nav>
