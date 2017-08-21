@@ -2,7 +2,7 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="post-single clearfix" id="post-<?php the_ID(); ?>">
 
-	<div class="fuss nova">Navigation: <a href="<?php echo get_settings('home'); ?>" title="首页">HOME</a>&nbsp;&raquo;&nbsp;<?php the_category(' &gt; '); ?>&nbsp;&raquo;&nbsp;<a href="<?php the_permalink() ?>" rel="bookmark" title="Permalink for : <?php the_title(); ?>"><?php the_title(); ?></a></div>
+	<div class="fuss nova">Navigation: <a href="<?php echo home_url(); ?>" title="首页">HOME</a>&nbsp;&raquo;&nbsp;<?php the_category(' &gt; '); ?>&nbsp;&raquo;&nbsp;<a href="<?php the_permalink() ?>" rel="bookmark" title="Permalink for : <?php the_title(); ?>"><?php the_title(); ?></a></div>
 
 	<article class="meta nova">
 
