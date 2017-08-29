@@ -22,7 +22,7 @@
 					$cover_s_meta = get_post_meta($post->ID,$key,TRUE);
 					if ($cover_s_meta != ""):
 				?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img alt="<?php the_title(); ?>" src="<?php echo $cover_s_meta;?>&w=120&h=92&crop-to-fit"></a>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img alt="<?php the_title(); ?>" src="<?php echo $cover_s_meta;?>"></a>
 				<?php else: ?>
 				<?php
 				$the_cat = get_the_category();
