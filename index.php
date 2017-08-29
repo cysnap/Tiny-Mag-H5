@@ -39,7 +39,7 @@
 		</div>
 
 		<div class="post-bottom clearfix">
-			<span class="post-info"><?php the_author(); ?>&nbsp;-&nbsp;<time><?php the_time('M j, Y @ G:i'); ?></time>&nbsp;-&nbsp;Topics : <?php foreach((get_the_category()) as $category) {echo $category->cat_name . ' ';}?>-&nbsp;<?php the_views($display = false); ?>&nbsp;views</span>
+			<span class="post-info"><?php the_author(); ?>&nbsp;-&nbsp;<time><?php the_time('M j, Y @ G:i'); ?></time>&nbsp;-&nbsp;Topics : <?php foreach((get_the_category()) as $category) {echo $category->cat_name . ' ';}?></span>
 			<span class="nova-r">
 				<?php comments_popup_link('Discussion&nbsp;&raquo;', '1 comment&nbsp;&raquo;', '% comments&nbsp;&raquo;', 'post-comments'); ?>&nbsp;&nbsp;&nbsp;<a class="more-link" href="<?php the_permalink() ?>" title="<?php the_title(); ?>" target="_blank" rel="nofollow">Read More&nbsp;&raquo;</a>
 			</span>

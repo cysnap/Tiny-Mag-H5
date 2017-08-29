@@ -8,7 +8,7 @@
 
 		<header class="post-single-title">
 			<h2><?php the_title(); ?></h2>
-			<span class="post-single-info"><time><?php the_time('Y-m-d H:i'); ?></time>&nbsp;&nbsp;&nbsp;&nbsp;<?php foreach((get_the_category()) as $category) {echo $category->cat_name . ' ';}?>&nbsp;&nbsp;&nbsp;&nbsp;<?php the_views(); ?>&nbsp;views&nbsp;&nbsp;&nbsp;&nbsp;<?php comments_popup_link('Discussion', '1 comment', '% comments'); ?></span>
+			<span class="post-single-info"><time><?php the_time('Y-m-d H:i'); ?></time>&nbsp;&nbsp;&nbsp;&nbsp;<?php foreach((get_the_category()) as $category) {echo $category->cat_name . ' ';}?>&nbsp;&nbsp;&nbsp;&nbsp;<?php comments_popup_link('Discussion', '1 comment', '% comments'); ?></span>
 		</header>
 
 		<div class="entry clearfix">
