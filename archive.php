@@ -22,7 +22,6 @@
 <?php } ?>
 
 <?php rewind_posts() ?>
-<?php $count = 1; ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 <?php if(is_tag()) { ?>
@@ -33,7 +32,6 @@
 </tr>
 <?php } elseif(!is_paged()){ ?>
 
-<?php if ($count <= 3) : ?>
 <div class="post meta" id="post-<?php the_ID(); ?>">
 	<div class="post-title">
 		<h2><a href="<?php the_permalink() ?>" rel="bookmark" ><?php the_title(); ?></a></h2>
@@ -55,7 +53,7 @@
 		<div class="nova-r"><span><small> (<?php the_author(); ?>&nbsp;- <?php the_time('F j, Y H:i'); ?> - <?php the_views($display = false); ?>)  views</small></span></div>
 		<div class="clearfix"></div>
 </div>
-<?php endif; $count++; ?>
+<?php endif; ?>
 
 <?php }else{ ?>
 <div class="meta nova" id="post-<?php the_ID(); ?>">
