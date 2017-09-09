@@ -5,17 +5,6 @@
 
 		<li><?php dynamic_sidebar('300x250-Ads'); ?></li>
 		<li><?php dynamic_sidebar('sb_banner'); ?></li>
-		<?php if (is_category()) { ?>
-		<li>
-			<h2 class="sidebar-title">MONTHLY TOPLIST</h2>
-			<div class="notice nova">
-				<ul class="list_page">
-					<?php $categories = get_the_category(); foreach ($categories as $category) {get_most_viewed_category($category_id = $category->term_id, $mode = '', $limit = 10, $chars = 0, $display = true); } ?>
-				</ul>
-			</div>
-		</li>
-		<?php } ?>
-
 		<?php if (is_day() || is_month() || is_year()) {?>
 		<li>
 			<?php get_calendar();?>
@@ -34,17 +23,6 @@
 		<?php } ?>
 
 		<?php if ( is_home() ) { ?>
-
-		<li>
-			<h2 class="sidebar-title">WEEKLY TOPLIST</h2>
-			<div class="notice">
-				<ul> <?php if (function_exists('get_most_viewed')): ?>
-					<?php get_most_viewed('post', 15, 0, true, true); ?>
-					<?php endif; ?>
-				</ul>
-			</div>
-		</li>
-
 		<li>
 			<h2 class="sidebar-title">TAGS CLOUD</h2>
 			<div class="tag-cloud notice">
