@@ -52,7 +52,6 @@
 		<div class="nova-r"><span><small> (<?php the_author(); ?>&nbsp;- <?php the_time('F j, Y H:i'); ?></small></span></div>
 		<div class="clearfix"></div>
 </div>
-<?php endif; ?>
 
 <?php }else{ ?>
 <div class="meta nova" id="post-<?php the_ID(); ?>">

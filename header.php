@@ -17,7 +17,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url');_e('?');echo(date('Ynj', time()));?>" />
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
-	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/functions.js"></script>
 	<?php wp_head(); ?>
 </head>
