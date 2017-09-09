@@ -47,7 +47,6 @@
 	</div>
 	<div class="post-bottom clearfix"><span class="post-tags"><?php the_tags('', ' - ', ''); ?></span><span class="nova-r"><?php comments_popup_link('Discussion&nbsp;&raquo;', '1 comment&nbsp;&raquo;', '% comments&nbsp;&raquo;', 'post-comments'); ?>&nbsp;&nbsp;&nbsp;<a class="more-link" href="<?php the_permalink() ?>" title="<?php the_title(); ?>" target="_blank" rel="nofollow">Read More&nbsp;&raquo;</a></span></div>
 </div>
-<?php else: ?>
 <div class="meta nova" id="post-<?php the_ID(); ?>">
 		<div class="nova-l"><h2><a href="<?php the_permalink() ?>" rel="bookmark" ><?php the_title(); ?></a></h2></div>
 		<div class="nova-r"><span><small> (<?php the_author(); ?>&nbsp;- <?php the_time('F j, Y H:i'); ?></small></span></div>
