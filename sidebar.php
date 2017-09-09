@@ -23,11 +23,11 @@
 
 		<?php } ?>
 
-		<?php if ( !is_home() && !is_crawler() ) { ?>
+		<?php if ( !is_home() ) { ?>
 		<li>
 			<h2 class="sidebar-title">LATEST</h2>
 			<div class="notice nova">
-				<ul class="list_page"><?php echo mb_strimwidth(strip_tags(wp_get_archives('type=postbypost&limit=10')), 0, 35,'...') ?></ul>
+				<ul class="list_page"><?php echo strip_tags(wp_get_archives('type=postbypost&limit=10')) ?></ul>
 			</div>
 			<div class="clearfix"></div>
 		</li>
