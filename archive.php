@@ -35,7 +35,7 @@
 <div class="post meta" id="post-<?php the_ID(); ?>">
 	<div class="post-title">
 		<h2><a href="<?php the_permalink() ?>" rel="bookmark" ><?php the_title(); ?></a></h2>
-		<span class="post-info"><?php the_author(); ?>&nbsp;posted in &nbsp;: <?php the_time('F j, Y H:i:s'); ?>&nbsp;|&nbsp; Category: <?php foreach((get_the_category()) as $category) {echo $category->cat_name . ' ';}?>&nbsp;|&nbsp;<?php the_views($display = false); ?>&nbsp;views</span>
+		<span class="post-info"><?php the_author(); ?>&nbsp;posted in &nbsp;: <?php the_time('F j, Y H:i:s'); ?>&nbsp;|&nbsp; Category: <?php foreach((get_the_category()) as $category) {echo $category->cat_name . ' ';}?></span>
 		<?php edit_post_link(' Edit', '<span class="post-edit">', '</span>'); ?>
 	</div>
 
@@ -50,7 +50,7 @@
 <?php else: ?>
 <div class="meta nova" id="post-<?php the_ID(); ?>">
 		<div class="nova-l"><h2><a href="<?php the_permalink() ?>" rel="bookmark" ><?php the_title(); ?></a></h2></div>
-		<div class="nova-r"><span><small> (<?php the_author(); ?>&nbsp;- <?php the_time('F j, Y H:i'); ?> - <?php the_views($display = false); ?>)  views</small></span></div>
+		<div class="nova-r"><span><small> (<?php the_author(); ?>&nbsp;- <?php the_time('F j, Y H:i'); ?></small></span></div>
 		<div class="clearfix"></div>
 </div>
 <?php endif; ?>
@@ -58,7 +58,7 @@
 <?php }else{ ?>
 <div class="meta nova" id="post-<?php the_ID(); ?>">
 		<div class="nova-l"><h2><a href="<?php the_permalink() ?>" rel="bookmark" ><?php the_title(); ?></a></h2></div>
-		<div class="nova-r"><span><small> (<?php the_author(); ?>&nbsp;- <?php the_time('F j, Y H:i'); ?> - <?php the_views($display = false); ?>) 次浏览</small></span></div>
+		<div class="nova-r"><span><small> (<?php the_author(); ?>&nbsp;- <?php the_time('F j, Y H:i'); ?></small></span></div>
 		</div class="clearfix"></div>
 </div>
 <?php }?>
