@@ -15,7 +15,7 @@
 			<div class="keywords clearfix"><h3>HOT TOPICS</h3><?php wp_tag_cloud('smallest=9&largest=15&number=8&orderby=count&order=DESC'); ?></div>
 			<div class="keywords">
 				<h3>LATEST</h3>
-				<ul><?php echo strip_tags(wp_get_archives('type=postbypost&limit=10') ?></ul>
+				<ul><?php echo strip_tags(wp_get_archives('type=postbypost&limit=10')) ?></ul>
 			</div>
 		</div>
 	</div>
