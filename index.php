@@ -16,7 +16,7 @@
 		</div>
 
 		<div class="entry clearfix">
-			<div class="nova-r">
+			<div class="aligncenter">
 				<?php
 					$key = "cover_s";
 					$cover_s_meta = get_post_meta($post->ID,$key,TRUE);

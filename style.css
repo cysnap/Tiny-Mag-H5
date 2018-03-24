@@ -26,7 +26,7 @@ a:hover{color:#79A5D6;text-decoration:none;}
 .nova-l{float:left;}
 .nova-r{float:right;}
 .nova-l-h{width:950px;margin:0 auto;height:130px;}
-.aligncenter{display:block;margin:0 auto;}
+.aligncenter{display:block;margin:0 auto;text-align:center;}
 /* Structure */
 main{margin:5px auto 10px;width:950px;text-align:left;overflow:hidden;display:block;}
 header{padding:10px 0 0 0;margin: 0 auto;text-align: left;background: #F1F9FC url(images/header_bg.jpg) repeat-x 100% 0px;}
